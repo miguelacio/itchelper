@@ -106,7 +106,8 @@
     
     FatherClass *temporal = [StudentArray objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = [temporal fullName];
+    cell.textLabel.text = [temporal nControl];
+    cell.detailTextLabel.text = [temporal fullName];
     
     return cell;
 }
