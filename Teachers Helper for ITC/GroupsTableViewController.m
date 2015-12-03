@@ -124,9 +124,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSString *user = [[NSUserDefaults standardUserDefaults] valueForKey:@"userName"];
+    NSString *password = [[NSUserDefaults standardUserDefaults] valueForKey:@"userPassword"];
+    
+    
+    
     //Inicializamos el arreglo de Personajes.
     groupArray = [[NSMutableArray alloc]initWithCapacity:15];
-    NSString *groupsURL=@"http://intertec.itculiacan.edu.mx/intertecmovil/grupos.php?cadena=920-12345678";
+    NSString *groupsURL=@"http://intertec.itculiacan.edu.mx/intertecmovil/grupos.php?cadena=";
+    
+    groupsURL = [[[groupsURL stringByAppendingString:user]stringByAppendingString:@"-"]stringByAppendingString:password];
+    
+     NSLog(groupsURL, @"HOlis" );
+    
     NSURL *finalGroupsURL = [NSURL URLWithString:groupsURL];
     NSMutableURLRequest *solicitud = [NSMutableURLRequest requestWithURL:finalGroupsURL];
     
@@ -138,13 +148,10 @@
     {
         NSLog(@"Conexión establecida en grupos");
         datosWeb = [NSMutableData data]; //Inicializa datosWeb.
+     
     }
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+ 
 
 }
 

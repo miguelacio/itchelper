@@ -59,6 +59,12 @@
     
     NSLog(signInURL, @"HOlis" );
     
+    [[NSUserDefaults standardUserDefaults] setObject:user forKey:@"userName"];
+    [[NSUserDefaults standardUserDefaults] setObject:password forKey:@"userPassword"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    NSLog(user);
+    
 
     
   
@@ -77,6 +83,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+
 }
 
 //Inicia Métodos para delegado de conexión
@@ -116,6 +124,9 @@
         
         UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Ok pues" style:UIAlertActionStyleCancel handler:^(UIAlertAction * action) {
             NSLog(@"asdhfgjk");
+            
+            
+           
         }];
         
         [action_view addAction:cancel];
