@@ -79,7 +79,6 @@
    
      studentsURL = [studentsURL stringByReplacingOccurrencesOfString:@" " withString:@""];
     
-    NSLog(studentsURL);
     
     NSURL *finalStudentsURL = [NSURL URLWithString:studentsURL];
     NSMutableURLRequest *solicitud = [NSMutableURLRequest requestWithURL:finalStudentsURL];
@@ -127,6 +126,7 @@
     
     cell.textLabel.text = [temporal nControl];
     cell.detailTextLabel.text = [temporal fullName];
+    cell.imageView.image = [UIImage imageNamed:@"ic_scores.png"];
     
     return cell;
 }

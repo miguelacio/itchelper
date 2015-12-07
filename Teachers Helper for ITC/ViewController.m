@@ -15,18 +15,7 @@
 @implementation ViewController
 @synthesize textUser, textPassword, indicador;
 
-/*
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if ([segue.identifier isEqualToString:@"loginSuccess"]) {
-        
-        NSString *username =@"perro";
-        HomeViewController *hVC = [segue destinationViewController];
-        hVC.user = username;
-        
-    }
-    
-}
- */
+
 
 -(IBAction)btnSignIn:(id)sender{
     
@@ -53,6 +42,7 @@
     }
    
     NSString *signInURL = @"http://intertec.itculiacan.edu.mx/intertecmovil/entrada.php?cadena=";
+    
     signInURL = [[[signInURL stringByAppendingString:user]stringByAppendingString:@"-"]stringByAppendingString:password];
     NSURL *url = [NSURL URLWithString:signInURL];
     

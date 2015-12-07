@@ -375,38 +375,43 @@
                             <animations/>
                             <items>
                                 <navigationItem title="Alumnos" id="9Yj-xe-M5k">
-                                    <barButtonItem key="leftBarButtonItem" title="Grupo" id="l1I-mD-OY7">
+                                    <barButtonItem key="leftBarButtonItem" title="Grupos" id="l1I-mD-OY7">
                                         <connections>
-                                            <segue destination="abn-AN-Rcg" kind="show" id="VwE-pK-buN"/>
+                                            <segue destination="9nT-eW-7Vx" kind="show" id="Wfm-Ci-ajU"/>
                                         </connections>
                                     </barButtonItem>
                                 </navigationItem>
                             </items>
                         </navigationBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="studentsRow" textLabel="tlR-7v-wYo" detailTextLabel="b4I-mU-JFC" style="IBUITableViewCellStyleValue2" id="DgS-H0-hAy">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="studentsRow" textLabel="tlR-7v-wYo" detailTextLabel="b4I-mU-JFC" imageView="AdN-zN-Rf5" style="IBUITableViewCellStyleSubtitle" id="DgS-H0-hAy">
                                 <rect key="frame" x="0.0" y="94" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DgS-H0-hAy" id="wO7-d9-aoG">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tlR-7v-wYo">
-                                            <rect key="frame" x="15" y="14" width="91" height="15"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tlR-7v-wYo">
+                                            <rect key="frame" x="54" y="5" width="32" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b4I-mU-JFC">
-                                            <rect key="frame" x="112" y="14" width="33" height="15"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b4I-mU-JFC">
+                                            <rect key="frame" x="54" y="25" width="31" height="14"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="ic_scores" id="AdN-zN-Rf5">
+                                            <rect key="frame" x="15" y="9" width="24" height="24"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </imageView>
                                     </subviews>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -422,7 +427,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ppt-eS-Uby" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1258.5" y="-901.5"/>
+            <point key="canvasLocation" x="1346.5" y="-901.5"/>
         </scene>
         <!--Fechas-->
         <scene sceneID="Q4R-PZ-61c">
@@ -637,7 +642,6 @@
         <image name="ic_scores" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VwE-pK-buN"/>
-        <segue reference="vfF-TN-zm9"/>
+        <segue reference="Wfm-Ci-ajU"/>
     </inferredMetricsTieBreakers>
 </document>
