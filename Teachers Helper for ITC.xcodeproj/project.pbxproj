@@ -17,7 +17,6 @@
 		CF5114E11BFF993E00DF5650 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF5114DF1BFF993E00DF5650 /* LaunchScreen.storyboard */; };
 		CF5114EC1BFF993F00DF5650 /* Teachers_Helper_for_ITCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5114EB1BFF993F00DF5650 /* Teachers_Helper_for_ITCTests.m */; };
 		CF5114F71BFF993F00DF5650 /* Teachers_Helper_for_ITCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5114F61BFF993F00DF5650 /* Teachers_Helper_for_ITCUITests.m */; };
-		CF5E7EF51C03A33200702A1D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5E7EF41C03A33200702A1D /* HomeViewController.m */; };
 		CF8386091C0649E90097CD4E /* GroupsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8386081C0649E90097CD4E /* GroupsTableViewController.m */; };
 		E1C556931C0685700065D502 /* FatherClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C556921C0685700065D502 /* FatherClass.m */; };
 /* End PBXBuildFile section */
@@ -60,8 +59,6 @@
 		CF5114F21BFF993F00DF5650 /* Teachers Helper for ITCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Teachers Helper for ITCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF5114F61BFF993F00DF5650 /* Teachers_Helper_for_ITCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Teachers_Helper_for_ITCUITests.m; sourceTree = "<group>"; };
 		CF5114F81BFF993F00DF5650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF5E7EF31C03A33200702A1D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		CF5E7EF41C03A33200702A1D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		CF8386071C0649E90097CD4E /* GroupsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupsTableViewController.h; sourceTree = "<group>"; };
 		CF8386081C0649E90097CD4E /* GroupsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupsTableViewController.m; sourceTree = "<group>"; };
 		E1C556911C0685700065D502 /* FatherClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FatherClass.h; sourceTree = "<group>"; };
@@ -127,8 +124,6 @@
 				CF5114DF1BFF993E00DF5650 /* LaunchScreen.storyboard */,
 				CF5114E21BFF993E00DF5650 /* Info.plist */,
 				CF5114D11BFF993E00DF5650 /* Supporting Files */,
-				CF5E7EF31C03A33200702A1D /* HomeViewController.h */,
-				CF5E7EF41C03A33200702A1D /* HomeViewController.m */,
 				CF8386071C0649E90097CD4E /* GroupsTableViewController.h */,
 				CF8386081C0649E90097CD4E /* GroupsTableViewController.m */,
 				E1C556911C0685700065D502 /* FatherClass.h */,
@@ -300,7 +295,6 @@
 				CF5114D91BFF993E00DF5650 /* ViewController.m in Sources */,
 				E1C556931C0685700065D502 /* FatherClass.m in Sources */,
 				CF5114D61BFF993E00DF5650 /* AppDelegate.m in Sources */,
-				CF5E7EF51C03A33200702A1D /* HomeViewController.m in Sources */,
 				CF5114D31BFF993E00DF5650 /* main.m in Sources */,
 				8B765D281C08BD9E00576DA7 /* DetailViewController.m in Sources */,
 			);

@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "HomeViewController.h"
 
 @interface ViewController ()
 
@@ -63,7 +62,7 @@
     [[NSUserDefaults standardUserDefaults] setObject:password forKey:@"userPassword"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
-    NSLog(user);
+
     
 
     

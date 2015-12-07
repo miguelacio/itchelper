@@ -8,12 +8,14 @@
 
 #import "StudentsTableViewController.h"
 #import "FatherClass.h"
+#import "DetailViewController.h"
 
 @interface StudentsTableViewController ()
 
 @end
 
 @implementation StudentsTableViewController
+
 
 
 -(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
@@ -59,12 +61,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSString *user = [[NSUserDefaults standardUserDefaults] valueForKey:@"userName"];
+    NSString *password = [[NSUserDefaults standardUserDefaults] valueForKey:@"userPassword"];
+    NSString *claveMateria = [[NSUserDefaults standardUserDefaults] valueForKey:@"currentClaveGrupo"];
+    NSString *claveGrupo = [[NSUserDefaults standardUserDefaults] valueForKey:@"currentClaveMateria"];
+    
+    NSLog(@"PERRO");
+    
+    
     //Inicializamos el arreglo de Personajes.
     StudentArray = [[NSMutableArray alloc]initWithCapacity:15];
-    NSString *studentsURL=@"http://intertec.itculiacan.edu.mx/intertecmovil/alumnos.php?cadena=920-12345678-AEB1011-9A";
+    NSString *studentsURL=@"http://intertec.itculiacan.edu.mx/intertecmovil/alumnos.php?cadena=";
+
+    
+    
+    studentsURL = [[[[[[[studentsURL stringByAppendingString:user]stringByAppendingString:@"-"]stringByAppendingString:password]stringByAppendingString:@"-"]stringByAppendingString:claveGrupo]stringByAppendingString:@"-" ]stringByAppendingString:claveMateria];
+   
+     studentsURL = [studentsURL stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    NSLog(studentsURL);
+    
     NSURL *finalStudentsURL = [NSURL URLWithString:studentsURL];
     NSMutableURLRequest *solicitud = [NSMutableURLRequest requestWithURL:finalStudentsURL];
-    
+       
     //Establecemeos conexion
     conexion = [[NSURLConnection alloc]initWithRequest:solicitud delegate:self];
     

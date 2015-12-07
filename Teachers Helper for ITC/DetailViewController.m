@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "StudentsTableViewController.h"
 
 @interface DetailViewController ()
 
@@ -31,12 +32,25 @@
     lblJueves.text = jueves;
     lblViernes.text = viernes;
     
+    
+    [[NSUserDefaults standardUserDefaults] setObject:claveGrupo forKey:@"currentClaveGrupo"];
+    [[NSUserDefaults standardUserDefaults] setObject:claveMateria forKey:@"currentClaveMateria"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    NSLog(claveGrupo);
+    NSLog(claveMateria);
+ 
+
+    
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 /*
 #pragma mark - Navigation
