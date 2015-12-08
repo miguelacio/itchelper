@@ -37,8 +37,7 @@
     [[NSUserDefaults standardUserDefaults] setObject:claveMateria forKey:@"currentClaveMateria"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
-    NSLog(claveGrupo);
-    NSLog(claveMateria);
+
  
 
     
