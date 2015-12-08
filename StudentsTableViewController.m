@@ -134,8 +134,10 @@
     FatherClass *temporal = [StudentArray objectAtIndex:self.tableView.indexPathForSelectedRow.row];
     
     NSString *numControl = [temporal nControl];
+    NSString *nombreCompleto = [temporal fullName];
     
     [[NSUserDefaults standardUserDefaults] setObject:numControl  forKey:@"currentNumControl"];
+    [[NSUserDefaults standardUserDefaults] setObject:nombreCompleto  forKey:@"currentFullName"];
     
     [self performSegueWithIdentifier:@"studentScore" sender:self];
     

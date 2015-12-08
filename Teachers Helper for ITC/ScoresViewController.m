@@ -17,6 +17,7 @@
 
 @synthesize lblClaveGrupo, lblClaveMateria, lblNombreCompleto, lblNumControl, lblParcial1, lblParcial2, lblParcial3, lblParcial4, lblParcial5, lblParcial6, lblParcial7, lblParcial8;
 
+//Inicia Métodos para delegado de conexión
 -(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
     [datosWeb setLength:0];
@@ -32,30 +33,41 @@
     NSLog(@"Error en la conexión");
 }
 
+
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
     NSArray *jsonRecibido = [NSJSONSerialization JSONObjectWithData:datosWeb options:kNilOptions error:NULL];
     
-    NSString *numControl = [[NSUserDefaults standardUserDefaults] valueForKey:@"currentNumControl"];
-   
     
-    // The elements of the array ARE NSDictionary
+    NSString *numControl = [[NSUserDefaults standardUserDefaults] valueForKey:@"currentNumControl"];
+    NSString *nombreCompleto = [[NSUserDefaults standardUserDefaults] valueForKey:@"currentFullName"];
+    
+    [lblNombreCompleto setText:nombreCompleto];
+
+   
     for(NSDictionary *elemento in jsonRecibido)
     {
-        // Use modern Obj-C syntax to get value from dictionary
-        // Place them directly in the array.
-        // No need to store them in separate strings.
-        
-        //Objeto para guardar las variables.
-       //NSString *noc;
+    
         
         
-        //noc= elemento[@"aluctr"];
-        //if([noc isEqualToString:numControl])
-        //{
-            [lblParcial8 setText:elemento[@"lispa1"]];
+        NSString *noc= elemento[@"aluctr"];
+        
+        if([numControl isEqualToString:noc])
+        {
+            NSLog(@"numero de control %@",noc);
+            [lblParcial8 setText:elemento[@"lispa8"]];
+            [lblParcial7 setText:elemento[@"lispa7"]];
+            [lblParcial6 setText:elemento[@"lispa6"]];
+            [lblParcial5 setText:elemento[@"lispa5"]];
+            [lblParcial4 setText:elemento[@"lispa4"]];
+            [lblParcial3 setText:elemento[@"lispa3"]];
+            [lblParcial2 setText:elemento[@"lispa2"]];
+            [lblParcial1 setText:elemento[@"lispa1"]];
+            [lblClaveMateria setText:elemento[@"matcve"]];
+            [lblNumControl setText:elemento[@"aluctr"]];
+            
       
-        //}
+        }
     }
     
     
@@ -63,8 +75,9 @@
 
 
 - (void)viewDidLoad {
-    
     [super viewDidLoad];
+    
+    NSLog(@"entro al view did load");
     NSString *user = [[NSUserDefaults standardUserDefaults] valueForKey:@"userName"];
     NSString *password = [[NSUserDefaults standardUserDefaults] valueForKey:@"userPassword"];
     NSString *claveMateria = [[NSUserDefaults standardUserDefaults] valueForKey:@"currentClaveGrupo"];
@@ -74,10 +87,11 @@
     
    
     
-    calificaURL =[[[[[[[calificaURL stringByAppendingString:user]stringByAppendingString:@"-"]stringByAppendingString:password]stringByAppendingString:@"-"]stringByAppendingString:claveMateria]stringByAppendingString:@"-"]stringByAppendingString:claveGrupo];
+    calificaURL =[[[[[[[calificaURL stringByAppendingString:user]stringByAppendingString:@"-"]stringByAppendingString:password]stringByAppendingString:@"-"]stringByAppendingString:claveGrupo]stringByAppendingString:@"-"]stringByAppendingString:claveMateria];
     
-    NSLog(calificaURL, @"HOlis" );
-    
+
+    calificaURL = [calificaURL stringByReplacingOccurrencesOfString:@" " withString:@""];
+
     NSURL *finalCalificaURL = [NSURL URLWithString:calificaURL];
     NSMutableURLRequest *solicitud = [NSMutableURLRequest requestWithURL:finalCalificaURL];
     
