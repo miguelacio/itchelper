@@ -48,8 +48,6 @@
     for(NSDictionary *elemento in jsonRecibido)
     {
     
-        
-        
         NSString *noc= elemento[@"aluctr"];
         
         if([numControl isEqualToString:noc])
@@ -65,6 +63,7 @@
             [lblParcial1 setText:elemento[@"lispa1"]];
             [lblClaveMateria setText:elemento[@"matcve"]];
             [lblNumControl setText:elemento[@"aluctr"]];
+            [lblClaveGrupo setText:elemento[@"gpocve"]];
             
       
         }
