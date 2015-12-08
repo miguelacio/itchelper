@@ -27,8 +27,15 @@
     NSString *nControl;
     NSString *fullName;
     
-    
-    
+    //Calificaciones
+    NSString *parcial1;
+    NSString *parcial2;
+    NSString *parcial3;
+    NSString *parcial4;
+    NSString *parcial5;
+    NSString *parcial6;
+    NSString *parcial7;
+    NSString *parcial8;
 }
 @property(nonatomic,strong) NSString *subjectKey;
 @property(nonatomic,strong) NSString *longNameSubject;
@@ -41,5 +48,13 @@
 @property(nonatomic,strong) NSString *fridaySchedule;
 @property(nonatomic,strong) NSString *nControl;
 @property(nonatomic,strong) NSString *fullName;
+@property(nonatomic,strong) NSString *parcial1;
+@property(nonatomic,strong) NSString *parcial2;
+@property(nonatomic,strong) NSString *parcial3;
+@property(nonatomic,strong) NSString *parcial4;
+@property(nonatomic,strong) NSString *parcial5;
+@property(nonatomic,strong) NSString *parcial6;
+@property(nonatomic,strong) NSString *parcial7;
+@property(nonatomic,strong) NSString *parcial8;
 
 @end

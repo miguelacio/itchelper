@@ -17,7 +17,6 @@
 @implementation StudentsTableViewController
 
 
-
 -(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
     [datosWeb setLength:0];
@@ -130,8 +129,18 @@
     
     return cell;
 }
+-(void) tableView: (UITableView *) tableView didSelectRowAtIndexPath: (NSIndexPath *) indexPath {
+    
+    FatherClass *temporal = [StudentArray objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+    
+    NSString *numControl = [temporal nControl];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:numControl  forKey:@"currentNumControl"];
+    
+    [self performSegueWithIdentifier:@"studentScore" sender:self];
+    
 
-
+    }
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

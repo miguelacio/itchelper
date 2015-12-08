@@ -9,6 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface ScoresViewController : UIViewController
+{
+    NSURLConnection *conexion;
+    NSMutableData   *datosWeb;
+    NSMutableArray  *califArray;
+    
+
+}
+
 @property (weak, nonatomic) IBOutlet UILabel *lblParcial1;
 @property (weak, nonatomic) IBOutlet UILabel *lblParcial2;
 @property (weak, nonatomic) IBOutlet UILabel *lblParcial3;
