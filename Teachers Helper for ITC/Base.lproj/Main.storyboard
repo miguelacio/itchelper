@@ -160,6 +160,42 @@
             </objects>
             <point key="canvasLocation" x="771.5" y="243.5"/>
         </scene>
+        <!--Real And Programmed Dates By Group View Controller-->
+        <scene sceneID="IPr-G2-926">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="CdZ-Hz-ytD" customClass="RealAndProgrammedDatesByGroupViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wD7-wW-dxe"/>
+                        <viewControllerLayoutGuide type="bottom" id="HSN-hL-7Wp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TQb-8b-g8J">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tOw-xz-DfA">
+                                <rect key="frame" x="0.0" y="5" width="320" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="Fechas " id="wfX-1X-J5I">
+                                        <barButtonItem key="leftBarButtonItem" title="Grupos" id="gbM-Fo-spy"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LLr-GU-9R1">
+                                <rect key="frame" x="0.0" y="49" width="320" height="519"/>
+                                <animations/>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7IW-ct-TLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="843" y="-1632"/>
+        </scene>
         <!--Detail View Controller-->
         <scene sceneID="pVx-nI-IfD">
             <objects>
@@ -338,6 +374,11 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxP-RX-d3W">
+                                <rect key="frame" x="12" y="468" width="296" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Fechas programadas y reales de examenes"/>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -863,7 +904,7 @@
         <image name="ic_scores" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="bZ6-NA-c2H"/>
         <segue reference="vfF-TN-zm9"/>
-        <segue reference="n0s-ws-rNx"/>
     </inferredMetricsTieBreakers>
 </document>

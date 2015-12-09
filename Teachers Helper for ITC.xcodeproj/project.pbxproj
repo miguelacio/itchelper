@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8B765D281C08BD9E00576DA7 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B765D271C08BD9E00576DA7 /* DetailViewController.m */; };
 		8B7EAF031C17375400FFCB27 /* ScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7EAF021C17375400FFCB27 /* ScoresViewController.m */; };
+		8B8D2E791C18973100877B4C /* RealAndProgrammedDatesByGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8D2E781C18973100877B4C /* RealAndProgrammedDatesByGroupViewController.m */; };
 		8B9645681C0D0D2700D1696C /* StudentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9645671C0D0D2700D1696C /* StudentsTableViewController.m */; };
 		CF5114D31BFF993E00DF5650 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5114D21BFF993E00DF5650 /* main.m */; };
 		CF5114D61BFF993E00DF5650 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5114D51BFF993E00DF5650 /* AppDelegate.m */; };
@@ -44,6 +45,8 @@
 		8B765D271C08BD9E00576DA7 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		8B7EAF011C17375400FFCB27 /* ScoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoresViewController.h; sourceTree = "<group>"; };
 		8B7EAF021C17375400FFCB27 /* ScoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoresViewController.m; sourceTree = "<group>"; };
+		8B8D2E771C18973100877B4C /* RealAndProgrammedDatesByGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealAndProgrammedDatesByGroupViewController.h; sourceTree = "<group>"; };
+		8B8D2E781C18973100877B4C /* RealAndProgrammedDatesByGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealAndProgrammedDatesByGroupViewController.m; sourceTree = "<group>"; };
 		8B9645661C0D0D2700D1696C /* StudentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentsTableViewController.h; path = ../StudentsTableViewController.h; sourceTree = "<group>"; };
 		8B9645671C0D0D2700D1696C /* StudentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentsTableViewController.m; path = ../StudentsTableViewController.m; sourceTree = "<group>"; };
 		CF5114CE1BFF993E00DF5650 /* Teachers Helper for ITC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Teachers Helper for ITC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +138,8 @@
 				8B765D271C08BD9E00576DA7 /* DetailViewController.m */,
 				8B7EAF011C17375400FFCB27 /* ScoresViewController.h */,
 				8B7EAF021C17375400FFCB27 /* ScoresViewController.m */,
+				8B8D2E771C18973100877B4C /* RealAndProgrammedDatesByGroupViewController.h */,
+				8B8D2E781C18973100877B4C /* RealAndProgrammedDatesByGroupViewController.m */,
 			);
 			path = "Teachers Helper for ITC";
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8D2E791C18973100877B4C /* RealAndProgrammedDatesByGroupViewController.m in Sources */,
 				CF8386091C0649E90097CD4E /* GroupsTableViewController.m in Sources */,
 				8B9645681C0D0D2700D1696C /* StudentsTableViewController.m in Sources */,
 				CF5114D91BFF993E00DF5650 /* ViewController.m in Sources */,
