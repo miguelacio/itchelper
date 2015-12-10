@@ -37,6 +37,14 @@
     NSString *parcial7;
     NSString *parcial8;
     
+    //Unidades
+    NSString *unity;
+    NSString *firstRealDate;
+    NSString *firstProgammedDate;
+    NSString *lastRealDate;
+    NSString *lastProgrammedDate;
+    
+    
     
     
     
@@ -60,6 +68,11 @@
 @property(nonatomic,strong) NSString *parcial6;
 @property(nonatomic,strong) NSString *parcial7;
 @property(nonatomic,strong) NSString *parcial8;
+@property(nonatomic,strong) NSString *unity;
+@property(nonatomic,strong) NSString *firstRealDate;
+@property(nonatomic,strong) NSString *firstProgammedDate;
+@property(nonatomic,strong) NSString *lastRealDate;
+@property(nonatomic,strong) NSString *lastProgrammedDate;
 
 
 @end

@@ -128,14 +128,13 @@
     NSString *password = [[NSUserDefaults standardUserDefaults] valueForKey:@"userPassword"];
     
     
-    
     //Inicializamos el arreglo de Personajes.
     groupArray = [[NSMutableArray alloc]initWithCapacity:15];
     NSString *groupsURL=@"http://intertec.itculiacan.edu.mx/intertecmovil/grupos.php?cadena=";
     
     groupsURL = [[[groupsURL stringByAppendingString:user]stringByAppendingString:@"-"]stringByAppendingString:password];
     
-     NSLog(groupsURL, @"HOlis" );
+     NSLog(groupsURL);
     
     NSURL *finalGroupsURL = [NSURL URLWithString:groupsURL];
     NSMutableURLRequest *solicitud = [NSMutableURLRequest requestWithURL:finalGroupsURL];
@@ -181,7 +180,6 @@
     cell.textLabel.text = [temporal shortNameSubject];
     
     
-    
     cell.detailTextLabel.text = [temporal mondaySchedule];
     return cell;
    
@@ -201,6 +199,7 @@
     claveMateria = [group subjectKey];
     nombreLargo = [group longNameSubject];
     claveGrupo = [group groupKey];
+    
     
  
     

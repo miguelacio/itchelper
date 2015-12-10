@@ -93,17 +93,17 @@
     
     //Inicializamos el arreglo de Personajes.
     examsArray = [[NSMutableArray alloc]initWithCapacity:15];
-    NSString *studentsURL=@"http://intertec.itculiacan.edu.mx/intertecmovil/unidadesexa.php?cadena=920-12345678-AEB1011-9A";
+    NSString *examsURL=@"http://intertec.itculiacan.edu.mx/intertecmovil/unidadesexa.php?cadena=";
     
     
     
-    //studentsURL = [[[[[[[studentsURL stringByAppendingString:user]stringByAppendingString:@"-"]stringByAppendingString:password]stringByAppendingString:@"-"]stringByAppendingString:claveGrupo]stringByAppendingString:@"-" ]stringByAppendingString:claveMateria];
+    examsURL = [[[[[[[examsURL stringByAppendingString:user]stringByAppendingString:@"-"]stringByAppendingString:password]stringByAppendingString:@"-"]stringByAppendingString:claveGrupo]stringByAppendingString:@"-" ]stringByAppendingString:claveMateria];
     
-   // studentsURL = [studentsURL stringByReplacingOccurrencesOfString:@" " withString:@""];
+    examsURL = [examsURL stringByReplacingOccurrencesOfString:@" " withString:@""];
     
     
-    NSURL *finalStudentsURL = [NSURL URLWithString:studentsURL];
-    NSMutableURLRequest *solicitud = [NSMutableURLRequest requestWithURL:finalStudentsURL];
+    NSURL *finalExamsURL = [NSURL URLWithString:examsURL];
+    NSMutableURLRequest *solicitud = [NSMutableURLRequest requestWithURL:finalExamsURL];
     
     //Establecemeos conexion
     conexion = [[NSURLConnection alloc]initWithRequest:solicitud delegate:self];
@@ -151,60 +151,60 @@
             cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 1 real: %@", real01];
             break;
         case 1:
-            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 1 programada: %@", programmed02];
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 1 real: %@", real02];
+            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 2 programada: %@", programmed02];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 2 real: %@", real02];
             break;
         case 2:
-            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 1 programada: %@", programmed03];
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 1 real: %@", real03];
+            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 3 programada: %@", programmed03];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 3 real: %@", real03];
             break;
         case 3:
-            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 1 programada: %@", programmed04];
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 1 real: %@", real04];
+            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 4 programada: %@", programmed04];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 4 real: %@", real04];
             break;
         case 4:
-            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 1 programada: %@", programmed05];
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 1 real: %@", real05];
+            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 5 programada: %@", programmed05];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 5 real: %@", real05];
             break;
         case 5:
-            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 1 programada: %@", programmed06];
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 1 real: %@", real06];
+            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 6 programada: %@", programmed06];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 6 real: %@", real06];
             break;
         case 6:
-            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 1 programada: %@", programmed07];
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 1 real: %@", real07];
+            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 7 programada: %@", programmed07];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 7 real: %@", real07];
             break;
         case 7:
-            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 1 programada: %@", programmed08];
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 1 real: %@", real08];
+            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 8 programada: %@", programmed08];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 8 real: %@", real08];
             break;
         case 8:
-            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 1 programada: %@", programmed09];
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 1 real: %@", real09];
+            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 9 programada: %@", programmed09];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 9 real: %@", real09];
             break;
         case 9:
-            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 1 programada: %@", programmed10];
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 1 real: %@", real10];
+            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 10 programada: %@", programmed10];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 10 real: %@", real10];
             break;
         case 10:
-            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 1 programada: %@", programmed11];
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 1 real: %@", real11];
+            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 11 programada: %@", programmed11];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 11 real: %@", real11];
             break;
         case 11:
-            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 1 programada: %@", programmed12];
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 1 real: %@", real12];
+            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 12 programada: %@", programmed12];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 12 real: %@", real12];
             break;
         case 12:
-            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 1 programada: %@", programmed13];
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 1 real: %@", real13];
+            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 13 programada: %@", programmed13];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 13 real: %@", real13];
             break;
         case 13:
-            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 1 programada: %@", programmed14];
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 1 real: %@", real14];
+            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 14 programada: %@", programmed14];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 14 real: %@", real14];
             break;
         case 14:
-            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 1 programada: %@", programmed15];
-            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 1 real: %@", real15];
+            cell.textLabel.text = [NSString stringWithFormat:@"Unidad 15 programada: %@", programmed15];
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"Unidad 15 real: %@", real15];
             break;
         default:
             break;

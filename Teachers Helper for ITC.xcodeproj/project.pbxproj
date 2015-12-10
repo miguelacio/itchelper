@@ -10,6 +10,8 @@
 		8B765D281C08BD9E00576DA7 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B765D271C08BD9E00576DA7 /* DetailViewController.m */; };
 		8B7EAF031C17375400FFCB27 /* ScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7EAF021C17375400FFCB27 /* ScoresViewController.m */; };
 		8B8D2E7C1C19EA8900877B4C /* ProgramedAndRealDatesByGroupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8D2E7B1C19EA8900877B4C /* ProgramedAndRealDatesByGroupTableViewController.m */; };
+		8B8D2E7F1C1A08FC00877B4C /* DatesforUnitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8D2E7E1C1A08FC00877B4C /* DatesforUnitiesViewController.m */; };
+		8B8D2E821C1A247F00877B4C /* FollowingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8D2E811C1A247F00877B4C /* FollowingViewController.m */; };
 		8B9645681C0D0D2700D1696C /* StudentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9645671C0D0D2700D1696C /* StudentsTableViewController.m */; };
 		CF5114D31BFF993E00DF5650 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5114D21BFF993E00DF5650 /* main.m */; };
 		CF5114D61BFF993E00DF5650 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5114D51BFF993E00DF5650 /* AppDelegate.m */; };
@@ -47,6 +49,10 @@
 		8B7EAF021C17375400FFCB27 /* ScoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoresViewController.m; sourceTree = "<group>"; };
 		8B8D2E7A1C19EA8900877B4C /* ProgramedAndRealDatesByGroupTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgramedAndRealDatesByGroupTableViewController.h; sourceTree = "<group>"; };
 		8B8D2E7B1C19EA8900877B4C /* ProgramedAndRealDatesByGroupTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgramedAndRealDatesByGroupTableViewController.m; sourceTree = "<group>"; };
+		8B8D2E7D1C1A08FC00877B4C /* DatesforUnitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatesforUnitiesViewController.h; sourceTree = "<group>"; };
+		8B8D2E7E1C1A08FC00877B4C /* DatesforUnitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatesforUnitiesViewController.m; sourceTree = "<group>"; };
+		8B8D2E801C1A247F00877B4C /* FollowingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowingViewController.h; sourceTree = "<group>"; };
+		8B8D2E811C1A247F00877B4C /* FollowingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowingViewController.m; sourceTree = "<group>"; };
 		8B9645661C0D0D2700D1696C /* StudentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentsTableViewController.h; path = ../StudentsTableViewController.h; sourceTree = "<group>"; };
 		8B9645671C0D0D2700D1696C /* StudentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentsTableViewController.m; path = ../StudentsTableViewController.m; sourceTree = "<group>"; };
 		CF5114CE1BFF993E00DF5650 /* Teachers Helper for ITC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Teachers Helper for ITC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +146,10 @@
 				8B7EAF021C17375400FFCB27 /* ScoresViewController.m */,
 				8B8D2E7A1C19EA8900877B4C /* ProgramedAndRealDatesByGroupTableViewController.h */,
 				8B8D2E7B1C19EA8900877B4C /* ProgramedAndRealDatesByGroupTableViewController.m */,
+				8B8D2E7D1C1A08FC00877B4C /* DatesforUnitiesViewController.h */,
+				8B8D2E7E1C1A08FC00877B4C /* DatesforUnitiesViewController.m */,
+				8B8D2E801C1A247F00877B4C /* FollowingViewController.h */,
+				8B8D2E811C1A247F00877B4C /* FollowingViewController.m */,
 			);
 			path = "Teachers Helper for ITC";
 			sourceTree = "<group>";
@@ -306,9 +316,11 @@
 				CF5114D91BFF993E00DF5650 /* ViewController.m in Sources */,
 				E1C556931C0685700065D502 /* FatherClass.m in Sources */,
 				CF5114D61BFF993E00DF5650 /* AppDelegate.m in Sources */,
+				8B8D2E7F1C1A08FC00877B4C /* DatesforUnitiesViewController.m in Sources */,
 				CF5114D31BFF993E00DF5650 /* main.m in Sources */,
 				8B765D281C08BD9E00576DA7 /* DetailViewController.m in Sources */,
 				8B7EAF031C17375400FFCB27 /* ScoresViewController.m in Sources */,
+				8B8D2E821C1A247F00877B4C /* FollowingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
