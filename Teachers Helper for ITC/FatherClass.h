@@ -36,6 +36,10 @@
     NSString *parcial6;
     NSString *parcial7;
     NSString *parcial8;
+    
+    
+    
+    
 }
 @property(nonatomic,strong) NSString *subjectKey;
 @property(nonatomic,strong) NSString *longNameSubject;
@@ -56,5 +60,6 @@
 @property(nonatomic,strong) NSString *parcial6;
 @property(nonatomic,strong) NSString *parcial7;
 @property(nonatomic,strong) NSString *parcial8;
+
 
 @end

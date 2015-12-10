@@ -65,7 +65,6 @@
     NSString *claveMateria = [[NSUserDefaults standardUserDefaults] valueForKey:@"currentClaveGrupo"];
     NSString *claveGrupo = [[NSUserDefaults standardUserDefaults] valueForKey:@"currentClaveMateria"];
     
-    NSLog(@"PERRO");
     
     
     //Inicializamos el arreglo de Personajes.

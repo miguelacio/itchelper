@@ -160,42 +160,6 @@
             </objects>
             <point key="canvasLocation" x="771.5" y="243.5"/>
         </scene>
-        <!--Real And Programmed Dates By Group View Controller-->
-        <scene sceneID="IPr-G2-926">
-            <objects>
-                <viewController modalTransitionStyle="flipHorizontal" id="CdZ-Hz-ytD" customClass="RealAndProgrammedDatesByGroupViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wD7-wW-dxe"/>
-                        <viewControllerLayoutGuide type="bottom" id="HSN-hL-7Wp"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TQb-8b-g8J">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tOw-xz-DfA">
-                                <rect key="frame" x="0.0" y="5" width="320" height="44"/>
-                                <animations/>
-                                <items>
-                                    <navigationItem title="Fechas " id="wfX-1X-J5I">
-                                        <barButtonItem key="leftBarButtonItem" title="Grupos" id="gbM-Fo-spy"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LLr-GU-9R1">
-                                <rect key="frame" x="0.0" y="49" width="320" height="519"/>
-                                <animations/>
-                            </scrollView>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7IW-ct-TLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="843" y="-1632"/>
-        </scene>
         <!--Detail View Controller-->
         <scene sceneID="pVx-nI-IfD">
             <objects>
@@ -378,6 +342,9 @@
                                 <rect key="frame" x="12" y="468" width="296" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Fechas programadas y reales de examenes"/>
+                                <connections>
+                                    <segue destination="YcU-lh-6la" kind="show" id="9zT-x1-ODF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -400,6 +367,75 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C5l-WS-q91" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="788" y="-903"/>
+        </scene>
+        <!--Programed And Real Dates By Group Table View Controller-->
+        <scene sceneID="396-g6-KxQ">
+            <objects>
+                <tableViewController id="YcU-lh-6la" customClass="ProgramedAndRealDatesByGroupTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="All-nX-WT6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="cdm-dm-dA3">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <items>
+                                <navigationItem title="Title" id="XVj-ZP-RaI">
+                                    <barButtonItem key="leftBarButtonItem" title="Atras" id="SFv-Ip-7dT">
+                                        <connections>
+                                            <segue destination="7Hv-9L-zi0" kind="show" id="3Rs-Qo-QZA"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="datesRow" textLabel="Nrl-hv-Rex" detailTextLabel="bdh-5U-aXm" imageView="JNT-1c-DR7" style="IBUITableViewCellStyleSubtitle" id="5L6-BK-OJd">
+                                <rect key="frame" x="0.0" y="72" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5L6-BK-OJd" id="N5I-hd-MqI">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nrl-hv-Rex">
+                                            <rect key="frame" x="54" y="5" width="32" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bdh-5U-aXm">
+                                            <rect key="frame" x="54" y="25" width="41" height="14"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="ic_course_dates" id="JNT-1c-DR7">
+                                            <rect key="frame" x="15" y="9" width="24" height="24"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </imageView>
+                                    </subviews>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="YcU-lh-6la" id="XsU-vm-GOK"/>
+                            <outlet property="delegate" destination="YcU-lh-6la" id="JXK-g0-dcv"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ahu-wG-J0a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="629" y="-1641"/>
         </scene>
         <!--Students Table View Controller-->
         <scene sceneID="ANd-wA-75Y">
@@ -904,7 +940,8 @@
         <image name="ic_scores" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bZ6-NA-c2H"/>
+        <segue reference="3Rs-Qo-QZA"/>
         <segue reference="vfF-TN-zm9"/>
+        <segue reference="bZ6-NA-c2H"/>
     </inferredMetricsTieBreakers>
 </document>
