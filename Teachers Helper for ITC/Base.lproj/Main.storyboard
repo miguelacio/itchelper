@@ -142,6 +142,36 @@
                     <view key="view" contentMode="scaleToFill" id="qBc-qQ-JQs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instituto Tecnologico de Culiacan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xmx-dV-Ny5">
+                                <rect key="frame" x="20" y="448" width="254" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Todos los derechos reservados ©" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nbw-nI-Mh0">
+                                <rect key="frame" x="20" y="477" width="257" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcl-qj-Hy3">
+                                <rect key="frame" x="20" y="364" width="280" height="24"/>
+                                <animations/>
+                                <state key="normal" title="Cerrar session" image="Image">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="wA2-8V-ATM"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LOGO_TEC_PNG_OK" translatesAutoresizingMaskIntoConstraints="NO" id="H38-aP-tkh">
+                                <rect key="frame" x="20" y="28" width="280" height="170"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -151,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GcI-UR-Bfu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="705" y="971"/>
+            <point key="canvasLocation" x="216" y="1009"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="pVx-nI-IfD">
@@ -386,7 +416,7 @@
                                 <navigationItem title="Examenes" id="XVj-ZP-RaI">
                                     <barButtonItem key="leftBarButtonItem" title="Grupos" id="SFv-Ip-7dT">
                                         <connections>
-                                            <segue destination="7Hv-9L-zi0" kind="show" id="3Rs-Qo-QZA"/>
+                                            <segue destination="9nT-eW-7Vx" kind="show" id="Cyl-T4-iPV"/>
                                         </connections>
                                     </barButtonItem>
                                 </navigationItem>
@@ -431,7 +461,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ahu-wG-J0a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="266" y="-1813"/>
+            <point key="canvasLocation" x="462" y="-1643"/>
         </scene>
         <!--Datesfor Unities View Controller-->
         <scene sceneID="Gnk-aa-3H7">
@@ -509,7 +539,7 @@
                                     <navigationItem title="Unidades" id="Kye-xG-lDt">
                                         <barButtonItem key="leftBarButtonItem" title="Grupos" id="HDo-f3-d7t">
                                             <connections>
-                                                <segue destination="7Hv-9L-zi0" kind="show" id="3aG-eS-UUg"/>
+                                                <segue destination="9nT-eW-7Vx" kind="show" id="QVT-TO-Cdn"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -586,7 +616,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F7q-4O-AqU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="788" y="-1813"/>
+            <point key="canvasLocation" x="1088" y="-1621"/>
         </scene>
         <!--Students Table View Controller-->
         <scene sceneID="ANd-wA-75Y">
@@ -954,7 +984,6 @@
         <!--Seguimiento-->
         <scene sceneID="L00-G4-LcI">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="que-pO-Da3" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="SNQ-z6-BLu" customClass="FollowingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VfW-xI-KEA"/>
@@ -971,6 +1000,76 @@
                                     <navigationItem title="Seguimiento" id="WPQ-sl-DRV"/>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha planeada por el instructor:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymn-hH-zkJ">
+                                <rect key="frame" x="20" y="90" width="252" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha seguimiento 1:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Qx-dn-U0y">
+                                <rect key="frame" x="20" y="148" width="161" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha seguimiento 2:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1v-zt-qjA">
+                                <rect key="frame" x="20" y="206" width="164" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha seguimiento 3:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWN-L2-74J">
+                                <rect key="frame" x="20" y="264" width="164" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha de reporte final" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9RN-Px-lwW">
+                                <rect key="frame" x="20" y="322" width="168" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FECHA 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmx-q3-Q7T">
+                                <rect key="frame" x="20" y="119" width="280" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FECHA 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZlE-YF-GRf">
+                                <rect key="frame" x="20" y="177" width="280" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FECHA 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cg-Op-QTV">
+                                <rect key="frame" x="20" y="235" width="280" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FECHA 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdX-Wc-TTi">
+                                <rect key="frame" x="20" y="293" width="280" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FECHA 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Exe-eT-gGM">
+                                <rect key="frame" x="20" y="356" width="280" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -980,12 +1079,21 @@
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="lblFechaPlaneadaInstructor" destination="rmx-q3-Q7T" id="QE3-qV-XZX"/>
+                        <outlet property="lblFechaReporteFinal" destination="Exe-eT-gGM" id="Txx-v4-fOS"/>
+                        <outlet property="lblFechaSeg1" destination="ZlE-YF-GRf" id="4LR-TH-lVV"/>
+                        <outlet property="lblFechaSeg2" destination="9cg-Op-QTV" id="12r-gd-3OU"/>
+                        <outlet property="lblFechaSeg3" destination="bdX-Wc-TTi" id="0ec-iL-AAI"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="que-pO-Da3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1346" y="55"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Image" width="24" height="24"/>
         <image name="LOGO_TEC_PNG_OK" width="450" height="450"/>
         <image name="ic_course_dates" width="24" height="24"/>
         <image name="ic_face" width="24" height="24"/>
@@ -996,8 +1104,7 @@
         <image name="ic_settings" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vfF-TN-zm9"/>
-        <segue reference="T1z-rQ-A2d"/>
+        <segue reference="Cyl-T4-iPV"/>
         <segue reference="bZ6-NA-c2H"/>
     </inferredMetricsTieBreakers>
 </document>

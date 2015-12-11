@@ -22,6 +22,7 @@
     NSString *user = [textUser text];
     NSString *password = [textPassword text];
     
+    
     if ([textUser hasText] && [textPassword hasText]) {
        
     }else{
@@ -51,10 +52,8 @@
     [[NSUserDefaults standardUserDefaults] setObject:user forKey:@"userName"];
     [[NSUserDefaults standardUserDefaults] setObject:password forKey:@"userPassword"];
     [[NSUserDefaults standardUserDefaults] synchronize];
+   
     
-
-    
-
     
   
      NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:url];
@@ -69,12 +68,19 @@
     
     
 }
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
 
+
 }
+
+
+
+
 
 //Inicia Métodos para delegado de conexión
 -(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
