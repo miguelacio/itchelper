@@ -155,14 +155,18 @@
      
     }
     
-    NSString *welcome = @"Hola, ";
-    welcome = [[welcome stringByAppendingString:@"bienvenido "]stringByAppendingString:user];
     
-    [self.view makeToast:welcome
-                duration:3.0
-                position:CSToastPositionCenter];
+    BOOL bandera;
     
-    NSLog(welcome);
+    if (bandera) {
+        NSString *welcome = @"Hola, ";
+        welcome = [[welcome stringByAppendingString:@"bienvenido "]stringByAppendingString:user];
+        
+        [self.view makeToast:welcome
+                    duration:3.0
+                    position:CSToastPositionCenter];
+        bandera = false;
+    }
     
  
 
