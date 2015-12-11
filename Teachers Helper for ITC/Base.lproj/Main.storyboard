@@ -645,11 +645,11 @@
                             </items>
                         </navigationBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="studentsRow" textLabel="tlR-7v-wYo" detailTextLabel="b4I-mU-JFC" imageView="AdN-zN-Rf5" style="IBUITableViewCellStyleSubtitle" id="DgS-H0-hAy">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="studentsRow" textLabel="tlR-7v-wYo" detailTextLabel="b4I-mU-JFC" imageView="AdN-zN-Rf5" style="IBUITableViewCellStyleSubtitle" id="DgS-H0-hAy">
                                 <rect key="frame" x="0.0" y="94" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DgS-H0-hAy" id="wO7-d9-aoG">
-                                    <rect key="frame" x="0.0" y="0.0" width="253" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tlR-7v-wYo">
@@ -1108,6 +1108,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="bZ6-NA-c2H"/>
-        <segue reference="QVT-TO-Cdn"/>
+        <segue reference="Wfm-Ci-ajU"/>
     </inferredMetricsTieBreakers>
 </document>
