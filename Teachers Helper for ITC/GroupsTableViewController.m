@@ -8,6 +8,7 @@
 
 #import "GroupsTableViewController.h"
 #import "DetailViewController.h"
+#import "UIView+Toast.h"
 
 @interface GroupsTableViewController()
 
@@ -128,13 +129,17 @@
     NSString *password = [[NSUserDefaults standardUserDefaults] valueForKey:@"userPassword"];
     
     
+    
+   
+    
+    
     //Inicializamos el arreglo de Personajes.
     groupArray = [[NSMutableArray alloc]initWithCapacity:15];
     NSString *groupsURL=@"http://intertec.itculiacan.edu.mx/intertecmovil/grupos.php?cadena=";
     
     groupsURL = [[[groupsURL stringByAppendingString:user]stringByAppendingString:@"-"]stringByAppendingString:password];
     
-     NSLog(groupsURL);
+
     
     NSURL *finalGroupsURL = [NSURL URLWithString:groupsURL];
     NSMutableURLRequest *solicitud = [NSMutableURLRequest requestWithURL:finalGroupsURL];
@@ -149,6 +154,15 @@
         datosWeb = [NSMutableData data]; //Inicializa datosWeb.
      
     }
+    
+    NSString *welcome = @"Hola, ";
+    welcome = [[welcome stringByAppendingString:@"bienvenido "]stringByAppendingString:user];
+    
+    [self.view makeToast:welcome
+                duration:3.0
+                position:CSToastPositionCenter];
+    
+    NSLog(welcome);
     
  
 

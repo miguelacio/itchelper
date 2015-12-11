@@ -13,6 +13,7 @@
 		8B8D2E7F1C1A08FC00877B4C /* DatesforUnitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8D2E7E1C1A08FC00877B4C /* DatesforUnitiesViewController.m */; };
 		8B8D2E821C1A247F00877B4C /* FollowingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8D2E811C1A247F00877B4C /* FollowingViewController.m */; };
 		8B9645681C0D0D2700D1696C /* StudentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9645671C0D0D2700D1696C /* StudentsTableViewController.m */; };
+		8BCC735F1C1B3013005D48E5 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC735E1C1B3013005D48E5 /* UIView+Toast.m */; };
 		CF5114D31BFF993E00DF5650 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5114D21BFF993E00DF5650 /* main.m */; };
 		CF5114D61BFF993E00DF5650 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5114D51BFF993E00DF5650 /* AppDelegate.m */; };
 		CF5114D91BFF993E00DF5650 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5114D81BFF993E00DF5650 /* ViewController.m */; };
@@ -55,6 +56,8 @@
 		8B8D2E811C1A247F00877B4C /* FollowingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowingViewController.m; sourceTree = "<group>"; };
 		8B9645661C0D0D2700D1696C /* StudentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentsTableViewController.h; path = ../StudentsTableViewController.h; sourceTree = "<group>"; };
 		8B9645671C0D0D2700D1696C /* StudentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentsTableViewController.m; path = ../StudentsTableViewController.m; sourceTree = "<group>"; };
+		8BCC735D1C1B3013005D48E5 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Toast.h"; path = "../../Downloads/Toast-master/Toast/Toast/UIView+Toast.h"; sourceTree = "<group>"; };
+		8BCC735E1C1B3013005D48E5 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Toast.m"; path = "../../Downloads/Toast-master/Toast/Toast/UIView+Toast.m"; sourceTree = "<group>"; };
 		CF5114CE1BFF993E00DF5650 /* Teachers Helper for ITC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Teachers Helper for ITC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF5114D21BFF993E00DF5650 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CF5114D41BFF993E00DF5650 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -125,6 +128,8 @@
 		CF5114D01BFF993E00DF5650 /* Teachers Helper for ITC */ = {
 			isa = PBXGroup;
 			children = (
+				8BCC735D1C1B3013005D48E5 /* UIView+Toast.h */,
+				8BCC735E1C1B3013005D48E5 /* UIView+Toast.m */,
 				8B9645661C0D0D2700D1696C /* StudentsTableViewController.h */,
 				8B9645671C0D0D2700D1696C /* StudentsTableViewController.m */,
 				CF5114D41BFF993E00DF5650 /* AppDelegate.h */,
@@ -310,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BCC735F1C1B3013005D48E5 /* UIView+Toast.m in Sources */,
 				CF8386091C0649E90097CD4E /* GroupsTableViewController.m in Sources */,
 				8B9645681C0D0D2700D1696C /* StudentsTableViewController.m in Sources */,
 				8B8D2E7C1C19EA8900877B4C /* ProgramedAndRealDatesByGroupTableViewController.m in Sources */,
