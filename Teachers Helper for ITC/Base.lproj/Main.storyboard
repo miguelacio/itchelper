@@ -477,10 +477,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jgt-ah-RQX">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jgt-ah-RQX">
                                 <rect key="frame" x="20" y="95" width="280" height="140"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="unityRow" textLabel="e8b-Nz-0jp" imageView="Yt6-1y-lrC" style="IBUITableViewCellStyleDefault" id="3io-jD-F6Q">
                                         <rect key="frame" x="0.0" y="28" width="280" height="44"/>
@@ -1107,6 +1108,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="bZ6-NA-c2H"/>
-        <segue reference="vfF-TN-zm9"/>
+        <segue reference="QVT-TO-Cdn"/>
     </inferredMetricsTieBreakers>
 </document>

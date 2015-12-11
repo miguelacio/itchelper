@@ -8,6 +8,7 @@
 
 #import "DatesforUnitiesViewController.h"
 #import "FatherClass.h"
+#import "QuartzCore/QuartzCore.h"
 
 @interface DatesforUnitiesViewController ()
 
@@ -59,6 +60,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.tableViewUnidades.layer.borderWidth = 1.5;
+    self.tableViewUnidades.layer.borderColor = [UIColor blackColor].CGColor;
+    
+    
     
     NSString *user = [[NSUserDefaults standardUserDefaults] valueForKey:@"userName"];
     NSString *password = [[NSUserDefaults standardUserDefaults] valueForKey:@"userPassword"];
@@ -69,13 +74,13 @@
     
     //Inicializamos el arreglo de Personajes.
     unitArray = [[NSMutableArray alloc]initWithCapacity:15];
-    NSString *studentsURL=@"http://intertec.itculiacan.edu.mx/intertecmovil/unidadesmat.php?cadena=920-12345678-AEB1011-9A";
+    NSString *studentsURL=@"http://intertec.itculiacan.edu.mx/intertecmovil/unidadesmat.php?cadena=";
     
     
     
-   // studentsURL = [[[[[[[studentsURL stringByAppendingString:user]stringByAppendingString:@"-"]stringByAppendingString:password]stringByAppendingString:@"-"]stringByAppendingString:claveGrupo]stringByAppendingString:@"-" ]stringByAppendingString:claveMateria];
+    studentsURL = [[[[[[[studentsURL stringByAppendingString:user]stringByAppendingString:@"-"]stringByAppendingString:password]stringByAppendingString:@"-"]stringByAppendingString:claveGrupo]stringByAppendingString:@"-" ]stringByAppendingString:claveMateria];
     
-    //studentsURL = [studentsURL stringByReplacingOccurrencesOfString:@" " withString:@""];
+    studentsURL = [studentsURL stringByReplacingOccurrencesOfString:@" " withString:@""];
     
     
     NSURL *finalStudentsURL = [NSURL URLWithString:studentsURL];

@@ -156,18 +156,19 @@
     }
     
     
-    BOOL bandera;
+   
     
-    if (bandera) {
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"logged_in"]) {
         NSString *welcome = @"Hola, ";
         welcome = [[welcome stringByAppendingString:@"bienvenido "]stringByAppendingString:user];
         
         [self.view makeToast:welcome
-                    duration:3.0
+                    duration:2.0
                     position:CSToastPositionCenter];
-        bandera = false;
+        [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"logged_in"];
+
+        
     }
-    
  
 
 }

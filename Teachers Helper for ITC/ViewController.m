@@ -110,6 +110,7 @@
     {
         NSLog(@"Entro");
         [self performSegueWithIdentifier:@"loginSuccess" sender:self];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"logged_in"];
         
         
     }else
